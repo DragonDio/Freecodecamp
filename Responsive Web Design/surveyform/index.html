@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="language" content="en">
+        <meta name="viewport" content="width:device-width,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <header>
+            <h1 id="title">Survey For Recruitment</h1>
+        </header>
+        <main>
+            <p id="description">This is a survey to obtain the basic information.This is mainly aimed to make it easier for us to 
+                onboard those who would like to work with us.
+            </p>
+            <form id="survey-form" method="POST"  name="form1">
+              <label for="name" id="name-label"> 
+                  <p>Name </p> 
+                <input type="text" name="name" id="name" placeholder="Name"  title="This field cannot be empty" required autofocus tabindex="1"> 
+              </label>
+            <label for="email" id="email-label"> 
+                <p> Email</p>
+                <input  tabindex=2 type="email" name="email" id="email" placeholder="Email" title="Enter the correct email"  pattern=".*@.*\..{2,3}"required>
+            </label>
+            <label for="number" id="number-label">
+                <p></p>
+                <input type="number" name="number"  id="number" placeholder="Number" value="20" min="0" max="999">
+            </label>
+            <label for="dropdown" id="dropdown-label">
+                <p>Grade</p>
+                <select id="dropdown" name="dropdown">
+                    <optgroup label="Number Grades">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10" >10</option>
+                    </optgroup>
+                    <optgroup label="Letter Grades">
+                        <option value="10">S+</option>
+                        <option value="9">S</option>
+                        <option value="8">A</option> 
+                        <option value="7">B</option>
+                        <option value="6">C</option>
+                        <option value="5">D</option>
+                        <option value="4">E</option>
+                        <option value="1">F</option>
+                    </optgroup>
+                </select>
+            </label>
+                <label for="sport" id="sport-label">
+                    <input type="text" placeholder="Sport" name="sport" id="sport" list="sports" required>
+                    <datalist id="sports">
+                        <option value="Cricket">
+                        <option value="Hockey">
+                        <option value="Soccer">
+                        <option value="Basketball">
+                        <option value="Football">
+                    </datalist>
+                    <br>
+                    <div class="collection">
+                    <label for="Male">Male</label>
+                    <input type="radio" name="Gender" value="Male" id="MaleGender" checked>
+                    <label for="Female">Female</label>
+                     <input type="radio" name="Gender" value="Female" id="FemaleGender">
+                    </div>
+                     <br>
+                    <div class="collection">
+                    <label for="Anime">Anime</label>
+                    <input type="checkbox" name="checkboxforweeb" value="Anime" id="Anime" checked>
+                    <label for="Manga">Manga</label>
+                    <input type="checkbox" name="checkboxforweeb" value="Manga" id="Manga">
+                    <label for="Live Action">Live Action</label>
+                    <input type="checkbox" name="checkboxforweeb" value="Live Action" id="Live Action" checked>
+                </label>
+            </div>
+                <br>
+                 <textarea rows="10" columns="10"  placeholder="Additional Comments"></textarea>
+                <input type="submit" id="submit" value="click">
+              
+            </form>
+        </main>
+        <footer></footer>
+    </body>
+</html>

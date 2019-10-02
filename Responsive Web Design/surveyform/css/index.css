@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Mansalva&display=swap');
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Mansalva', cursive;
+    display:flex;
+    flex-direction:column;
+    background:linear-gradient(45deg,hsla(289, 53%, 39%, 0.34),hsla(289, 64%, 34%, 0.72));
+    
+}
+h1{
+    padding:0.5em;
+    font-weight:900;
+    font-family:'Indie Flower',cursive;
+    text-align:center;
+    font-size:3em;
+   
+}
+p{
+    font-size:1.5em;
+    text-align:justify;
+    width:100;
+    padding:0 0.2em;
+}
+input,textarea,select{
+    margin:1em auto;
+    display:block;
+    height:2em;
+    width:25%;
+    outline: none;
+    text-align:center;
+    background: none;
+    border-radius: 1.3em;
+    background-color:transparent;
+    border-color:black;
+    font-family: 'Mansalva', cursive;
+    font-size:1.2em;
+    font-weight:700;
+    
+    
+}
+select{
+    outline:none;
+    border:none;
+    -moz-appearance: none;
+}
+textarea{
+    border:none;
+    
+    outline:1px solid black;
+    line-height:1.8em;
+}
+input:not([type="submit"]){
+    border:0;
+}
+label{
+    font-size:1.2em;
+}
+select{
+    text-align:center;
+    outline:none;
+    color: #000;
+    color: rgba(0,0,0,0);
+    text-shadow: 0 0 0 #000;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
+select:focus{
+    outline: none;
+}
+textarea{
+
+    width:50%;
+    height:4em;
+}
+input[type="radio"],input[type="checkbox"]{
+    display:inline-block;
+    border-style: none;
+    width:initial;
+    margin:0 2em;
+    
+}
+label > p{
+    text-align:center;
+}
+div{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    
+  
+
+}
+input[type="submit"]{
+    outline: 0;
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+    box-shadow:0 0 0.1em 0 #000;
+    border-style:none;
+    
+}
+
+input:not([type="submit"]):focus,select:focus{
+    border-radius: 1.3em;
+    background-color:lightyellow;
+    border-style:outset;
+    border-width:0.2em;
+    border-color:lightgreen; 
+    box-shadow:0px 0.1em 0.5px 0px black;
+}
+input:not([type="submit"]):valid{
+    border-color:lightgreen;
+    border-radius: 1.3em;
+    border-style:solid;
+    border-width:0.1em;
+}
+@media only screen and (max-width:600px){
+    p{
+        text-align:center;
+    }
+    input,textarea,select{
+        width:75%;
+    }
+    div{
+       margin:0 auto;
+
+        
+
+    }
+}

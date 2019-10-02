@@ -1,0 +1,184 @@
+/*At least one component must be a flex*/
+/*At least one media query*/
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Playfair+Display&display=swap');
+*{
+	margin:0;
+	padding:0;
+	font-family: 'Libre Baskerville', serif;
+	
+	
+}
+body{
+	background:linear-gradient(45deg,hsla(119, 100%, 36%,0.36),hsla(119, 100%, 44%, 0.72));
+	color:white;
+}
+.wrapper{
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:center;
+}
+.wrapper > *{
+	flex:1 100%;
+	text-align:center;
+}
+.CompanyDetails{
+	
+	display:flex;
+	flex-flow:row;
+	padding-top:2.5em;
+	margin:1.5em 0 0 0;
+	
+	
+}
+h1{
+	font-family: 'Playfair Display', serif;
+	text-align:right;
+	font-size:4em;
+}
+.CompanyDetails > figure {
+	text-align:center;
+	margin:0;
+	flex:1 0;
+	display:flex;
+	flex-flow:column;
+	justify-content:space-between;
+	
+	
+}
+nav{
+	background:linear-gradient(45deg,hsl(119, 100%, 36%),hsla(119, 100%, 44%));
+	position:fixed;	
+}
+.CompanyDetails > figure > img {
+	flex:9;
+	height:65%;
+	width:62%;
+	margin:0 auto;
+}
+.CompanyDetails > figure >figcaption{
+	flex:1;
+	font-size:0.5em;
+}
+.CompanyDetails > h1 {
+	flex-grow:10;
+	margin:0;
+}
+.wrapper > header >nav{
+	width:100%;
+	
+	top: 0;
+	
+}
+.wrapper > header > nav >ul{
+	list-style:none;
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	
+  	
+	
+	
+}
+
+.wrapper > header > nav >ul > li{
+	flex-grow:1;
+	padding:1em;
+	border-left:1px solid rgba(255,255,255,0.3);
+	border-right:1px solid rgba(0,0,0,0.1);
+	border-bottom:1px solid rgba(0,0,0,0.1);
+	
+	
+}
+
+.wrapper > header > nav >ul>li>a{
+	text-decoration:none;
+	color: #000;
+    	color: rgba(0,0,0,0);
+    	text-shadow: 0 0 0 #000;
+	
+}
+
+.wrapper > header > nav >ul> li:hover{
+	background-color:hsl(119, 100%, 36%);
+	
+}
+section{
+	margin: 1em 0;
+	display:flex;
+	flex-flow:row nowrap;
+	justify-content:space-evenly;
+}
+section > video{
+	flex-grow:3;
+	flex-basis:0;
+}
+section > p{
+	flex-grow:2;
+	flex-basis:0;
+	text-align:right;
+	align-self:center;
+}
+form{
+	padding:1em;
+}
+.form > label> input {
+	height: 2em;
+	font-size: 1.4em;
+	max-width: 32em;
+	min-width:10em;
+	margin:1em;
+}
+.form > input{
+		width: 10em;
+		height: 4em;
+		padding: 1em;
+}
+
+@media all and (max-width:600px){
+
+
+.wrapper > header > .CompanyDetails {
+	margin-top:3.5em;
+}
+.wrapper > header > nav >ul > li{
+	margin-bottom:0;
+}
+
+.wrapper > header > nav >ul > li:last-child{
+	
+}
+	.CompanyDetails > figure{
+	display:none;
+}
+	.CompanyDetails > h1{
+		text-align:center;
+		padding:1em 0;
+}
+	.wrapper > header > nav >ul{
+	list-style:none;
+	display:flex;
+	flex-flow:row wrap;
+	
+}
+	.wrapper > header > nav >ul >li {
+		flex:1 100%;
+}
+	
+	
+
+section  {
+	flex-direction:column;
+	
+}
+section > video{
+	flex:1 100%;
+	margin:0.5em 0;
+	width:100%;
+	height:20%;
+}
+section > p{
+	flex:1 100%;
+	text-align:center;
+}
+
+}
